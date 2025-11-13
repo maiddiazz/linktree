@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+
+  <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body{
+        background-color: #F2EDE4;
+        font-family: Arial, sans-serif;
+      }
+
+      main{
+        width: 85vw;
+        max-width: 480px;
+        height: auto;
+        padding: 4% 0;
+        background-color: #AE6377;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 12px;
+        text-align: center;
+        animation: fadeIn 0.7s ease-in-out;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translate(-50%, -46%); }
+        to { opacity: 1; transform: translate(-50%, -50%); }
+      }
+
+      header img{
+        width: 90px;
+        height: 90px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-bottom: 12px;
+      }
+
+      header h1{
+        font-size: 24px;
+        margin-bottom: 10px;  
+        color: #fff;
+      }
+
+      header p{
+        font-size: 15px;
+        margin-bottom: 18px;
+        color: #f4f4f4;
+      }
+
+    
+      .redes ul{
+        list-style: none;
+      }
+
+      .redes li{
+        display: inline-block;
+        margin: 0 12px; 
+      }
+
+      .redes img{
+        width: 28px;
+        height: 28px;
+        transition: transform .25s;
+      }
+
+      .redes img:hover{
+        transform: scale(1.15);
+      }
+
+      nav ul{
+        position: relative;
+        text-align: center;
+        margin-top: 25px;
+      }
+
+      nav li{
+        list-style-type: none;
+        margin-top: 14px;
+      }
+
+      nav a{
+        background-color: #CA7185;
+        width: 75%;
+        display: inline-block;
+        padding: 20px 20px;
+        text-decoration: none;
+        color: rgb(0, 0, 0);
+        border-radius: 10px;
+        position: relative;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      nav img{
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+
+      nav a:hover{
+        transform: scale(1.07);
+        box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+      }
+
+      @media (min-width: 768px){
+        main{
+            width: 40vw;
+            max-width: 500px;
+            padding-top: 3%;
+        }
+
+        nav a{
+            width: 70%;
+        }
+      }
+
+  </style>
+
+</head>
+<body>
+
+    <main>
+      <header>
+          <img src="logomd.png" alt="Foto de perfil">
+          <h1>Maitena Diaz</h1>
+          <p>Estudiante de desarrollo de software en UADE</p>
+
+          <div class="redes">
+              <ul>
+                <li><a href="https://www.instagram.com/"><img src="insta-logo.png" alt="Instagram"></a></li>
+                <li><a href="https://ar.pinterest.com/"><img src="pinterest.png" alt="Pinterest"></a></li>
+                <li><a href="https://www.facebook.com/"><img src="facebook.png" alt="face"></a></li>
+              </ul>
+          </div>
+      </header>
+
+      <nav>
+          <ul>
+              <li>
+                  <a href="">
+                      <img src="logomd.png" alt="Identikit">
+                      <span>Identikit</span>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="https://maiddiazz.github.io/Blog-de-Recetas/">
+                      <img src="logo cocina.png" alt="Blog">
+                      <span>Blog</span>
+                  </a>
+              </li>
+
+              <li>
+                  <a href="">
+                      <span>Trabajo Final</span>
+                  </a>
+              </li>
+          </ul>
+      </nav>
+    </main>
+
+</body>
+</html>
